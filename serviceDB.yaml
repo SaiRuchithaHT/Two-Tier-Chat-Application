@@ -1,0 +1,12 @@
+#Sai Ruchitha Hardageri Thammareddy
+apiVersion: v1
+kind: Service
+metadata:
+  name: db-service  # Name of the service
+spec:
+  selector:
+    app: mongodb
+  ports:
+    - protocol: TCP
+      port: 27017
+      targetPort: 27017
